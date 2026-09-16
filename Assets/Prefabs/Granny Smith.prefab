@@ -160,7 +160,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8e1906075185f0c419324568896c6fe8, type: 2}
+  - {fileID: 2100000, guid: ea2248d4198b3d54fb3a8ecea8dd932c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -303,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5117783093248035390}
   m_Layer: 0
-  m_Name: Apple
+  m_Name: Granny Smith
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
