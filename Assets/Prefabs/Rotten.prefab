@@ -160,7 +160,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8e1906075185f0c419324568896c6fe8, type: 2}
+  - {fileID: 2100000, guid: dd791e5ae3ed6e14998ff4152bd778eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,7 +257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d612e74afdbe8b40be8d0a13a0d5c66, type: 2}
+  - {fileID: 2100000, guid: dd791e5ae3ed6e14998ff4152bd778eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -302,9 +302,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5117783093248035390}
-  - component: {fileID: 254127666066161019}
+  - component: {fileID: 4505036881901258658}
   m_Layer: 0
-  m_Name: Honeycrisp
+  m_Name: Rotten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &254127666066161019
+--- !u!54 &4505036881901258658
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
