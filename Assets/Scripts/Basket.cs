@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour {
     // Update is called once per frame
+    public ScoreCounter scoreCounter;
+
+    void Start()
+    {
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
+        scoreCounter = scoreGO.GetComponent<ScoreCounter>();
+
+    }
     void Update() {
         Vector3 mousePos2D = Input.mousePosition;
         mousePos2D.z = -Camera.main.transform.position.z;
@@ -17,6 +25,7 @@ public class Basket : MonoBehaviour {
         GameObject collidedWith = coll.gameObject;
         if (collidedWith.tag == "Apple") {
             Destroy(collidedWith);
+            scoreCounter.score += 100;
         }
     }   
 }
