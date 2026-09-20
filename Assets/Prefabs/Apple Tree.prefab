@@ -143,11 +143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67c49691c66cf445aeaedf02541ee32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 5771836252106263797, guid: 98e9b923777b2d0409218a2cd7c6c0f5, type: 3}
+  applePrefab: {fileID: 5771836252106263797, guid: ca9970f01966c8f4798e89028cc5f368, type: 3}
+  crapplePrefab: {fileID: 5771836252106263797, guid: 98e9b923777b2d0409218a2cd7c6c0f5, type: 3}
   speed: 20
   leftAndRightEdge: 24
   changeDirChance: 0.02
   AppleDropDelay: 1
+  CrappleDropDelay: 3
 --- !u!1 &5877611174708512587
 GameObject:
   m_ObjectHideFlags: 0

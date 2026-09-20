@@ -6,6 +6,7 @@ public class AppleTree : MonoBehaviour {
 [Header("Inscribed")]
 	//Prefab for instantiating apples
 	public GameObject applePrefab;
+    public GameObject crapplePrefab;
 	//Speed	at which the AppleTree moves
 	public float speed = 10f;
 	//Distance where AppleTree turns around
@@ -14,16 +15,24 @@ public class AppleTree : MonoBehaviour {
 	public float changeDirChance =	0.02f;
 	//	Rate at which Apples will be instantiated
 	public float AppleDropDelay = 1f;
+    public float CrappleDropDelay = 3f;
     // Start is called before the first frame update
     void Start() {
     //Dropping apples
         Invoke("DropApple", 2f);
+        Invoke("DropCrapple", 4f);
     }
 
     void DropApple() {
         GameObject apple = Instantiate<GameObject>(applePrefab);
         apple.transform.position = transform.position;
         Invoke("DropApple", AppleDropDelay);
+    }
+
+    void DropCrapple() {
+        GameObject crapple = Instantiate<GameObject>(crapplePrefab);
+        crapple.transform.position = transform.position;
+        Invoke("DropCrapple", CrappleDropDelay);
     }
 
     // Update is called once per frame

@@ -47,5 +47,13 @@ public class ApplePicker : MonoBehaviour
         }
 
     }
+    public void CrappleMissed()
+    {
+        GameObject[] CrappleArray = GameObject.FindGameObjectsWithTag("Crapple");
+        foreach(GameObject tempGO in CrappleArray)
+        {
+            Destroy(tempGO);
+        }
+    }
 
 }
