@@ -36,14 +36,14 @@ public class ApplePicker : MonoBehaviour
             Destroy(tempGO);
         }
 
-        int baskerIndex = basketList.Count - 1;
-        GameObject tBasketGO = basketList[baskerIndex];
-        basketList.RemoveAt(baskerIndex);
+        int basketIndex = basketList.Count - 1;
+        GameObject tBasketGO = basketList[basketIndex];
+        basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
 
         if (basketList.Count == 0)
         {
-            SceneManager.LoadScene("_Scene_0");
+            SceneManager.LoadScene("_Game_Over");
         }
 
     }
