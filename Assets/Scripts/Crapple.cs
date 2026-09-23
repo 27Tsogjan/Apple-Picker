@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Crapple : MonoBehaviour
@@ -12,9 +13,6 @@ public class Crapple : MonoBehaviour
         //Destroy Apple if it falls below bottomY
         if (transform.position.y < bottomY) {
             Destroy(this.gameObject);
-
-            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
-            apScript.CrappleMissed();
         }
     }
 }
