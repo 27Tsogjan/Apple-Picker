@@ -38,7 +38,7 @@ public class Basket : MonoBehaviour {
                     roundCounter.round += 1;
                 else
                 {
-                    SceneManager.LoadScene("_Game_Over");
+                    return;
                 }
             }
            
