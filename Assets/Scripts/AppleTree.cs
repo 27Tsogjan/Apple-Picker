@@ -15,12 +15,12 @@ public class AppleTree : MonoBehaviour {
 	public float changeDirChance =	0.02f;
 	//	Rate at which Apples will be instantiated
 	public float AppleDropDelay = 1f;
-    public float CrappleDropDelay = 3f;
+    public float CrappleDropDelay = 5f;
     // Start is called before the first frame update
     void Start() {
     //Dropping apples
         Invoke("DropApple", 2f);
-        Invoke("DropCrapple", 4f);
+        Invoke("DropCrapple", 6f);
     }
 
     void DropApple() {
