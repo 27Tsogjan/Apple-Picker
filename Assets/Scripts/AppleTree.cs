@@ -20,7 +20,7 @@ public class AppleTree : MonoBehaviour {
     void Start() {
     //Dropping apples
         Invoke("DropApple", 2f);
-        Invoke("DropCrapple", 6f);
+        Invoke("DropCrapple", 6.5f);
     }
 
     void DropApple() {
