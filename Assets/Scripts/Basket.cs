@@ -32,13 +32,13 @@ public class Basket : MonoBehaviour {
             Destroy(collidedWith);
             scoreCounter.score += 100;
             HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
-            if (scoreCounter.score >= roundCounter.round * 100)
+            if (scoreCounter.score >= roundCounter.round * 1250)
             {
                 if (roundCounter.round < 4)
                     roundCounter.round += 1;
                 else
                 {
-                    return;
+                    SceneManager.LoadScene("_Game_Over");
                 }
             }
            
